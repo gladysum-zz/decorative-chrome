@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Decorative Chrome",
+  "version": "1.0.0",
+  "description": "Displays a background image on google.com",
+
+  "content_scripts": [{
+    "css": ["style.css"],
+    "matches": ["*://www.google.com/*"]
+  }],
+
+  "web_accessible_resources": [
+      "montreux.jpg"
+  ]
+}
